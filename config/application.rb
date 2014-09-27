@@ -19,5 +19,8 @@ module MetalRailsApp
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    
+    # This was an attempt at dumping the schema format is something more readable by SC, but it had an odd permissions error. We are abadoning here, for the sake of creating this application
+    #config.active_record.schema_format = :sql
   end
 end
