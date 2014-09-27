@@ -1,1 +1,7 @@
-Hello world!
+<%= form_tag(questions_path, method: "post") do %>
+	<% @prompts.each do |question| %>
+		<%= check_box_tag("question_#{question.id}", "#{question.id}") %>
+		<%= label_tag("question_#{question.id}", "Do you like #{question.name}?") %>
+	<% end %>
+	<%= submit_tag("Find me metal I like") %>
+<% end %>
